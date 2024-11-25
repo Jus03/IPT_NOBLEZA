@@ -1,0 +1,235 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+
+header {
+    background: linear-gradient(135deg, #333, #f4a261);
+    padding: 40px 40px; 
+    color: #fff; 
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 28px; 
+    font-weight: bold;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    text-transform: uppercase;
+}
+
+
+.nav-links {
+    list-style: none; 
+    display: flex; 
+}
+
+.nav-links li {
+    margin-left: 25px; /* Space between each nav item */
+}
+
+.nav-links li a {
+    color: #fff;    
+    text-decoration: none; 
+    font-size: 18px; 
+    padding: 8px 16px; 
+    transition: background-color 0.3s ease; 
+}
+
+.nav-links li a:hover {
+    background-color: #f4a261; /* Change background color on hover */
+    color: #333; /* Dark text color on hover */
+    border-radius: 4px; /* Rounded corners for hover effect */
+}
+
+.logo {
+    display: flex; 
+    align-items: center; 
+}
+
+.logo img {
+    margin-right: 10px; /* Space between the logo and the text */
+    animation: colorChange 2s infinite alternate;
+}
+@keyframes colorChange {
+    0% {
+        filter: hue-rotate(0deg); /* Original color */
+    }
+    50% {
+        filter: hue-rotate(180deg); /* Change hue */
+    }
+    100% {
+        filter: hue-rotate(360deg); /* Complete cycle back to original */
+    }
+}
+
+.name {
+    text-decoration: underline; 
+    color: #4e54c8; 
+    margin: 0 5px; 
+    transition: color 0.3s; 
+}
+
+.name:hover {
+    color: #8f94fb; 
+}
+
+#hero {
+    background: linear-gradient(300deg, #fbc2eb, #a6c1ee, #00b09b);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    height: 100vh;
+    color: #fff;
+}
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .introduction {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    padding: 20px; /* Add padding around the introduction */
+}
+
+.left {
+    margin-right: 20px; /* Space between image and text */
+}
+
+.right {
+    max-width: 600px; /* Limit the width of the text */
+    float: right;
+}
+
+.me {
+    border-radius: 50%; /* Optional: Make the image circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+h1 {
+    font-size: 28px; 
+    margin-bottom: 10px; 
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5; 
+    color: #555; 
+}
+
+.me{
+    border-radius: 60%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#hero h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cta {
+    background-color: #f4a261;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-item {
+    text-align: center;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-list li {
+    list-style: none;
+    margin: 10px 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f4a261;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
