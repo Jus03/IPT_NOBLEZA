@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioData Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+h3 {
+    grid-column: span 1;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.photo-box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.photo-box p {
+    font-size: 14px;
+    color: #666;
+}
+
+input[type="submit"] {
+    grid-column: span 2;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+</style>
+<body>
+    <div class="container">
+        <h1>BIO-DATA</h1>
+
+        <!-- Personal Data Section -->
+        <section>
+            <h2>Personal Data</h2>
+            <form>
+                <h3>Name:</h3>
+                <input type="text" id="name" name="name" required>
+
+                <h3>Address:</h3>
+                <input type="text" id="address" name="address" required>
+
+                <h3>Phone:</h3>
+                <input type="tel" id="phone" name="phone">
+
+                <h3>Email:</h3>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Add more personal data fields here -->
+
+                <h3>Attach Photo</h3>
+                <div class="photo-box">
+                    <!-- Placeholder for the photo -->
+                    <p>Photo</p>
+                </div>
+            </form>
+        </section>
+
+        <!-- Educational Background Section -->
+        <section>
+            <h2>Educational Background</h2>
+            <form>
+                <h3>Elementary:</h3>
+                <input type="text" id="elementary" name="elementary">
+
+                <h3>High School:</h3>
+                <input type="text" id="highschool" name="highschool">
+
+                <h3>College:</h3>
+                <input type="text" id="college" name="college">
+
+                <h3>Degree Received:</h3>
+                <input type="text" id="degree" name="degree">
+
+                <h3>Special Skills:</h3>
+                <input type="text" id="skills" name="skills">
+            </form>
+        </section>
+
+        <!-- Employment Record Section -->
+        <section>
+            <h2>Employment Record</h2>
+            <form>
+                <h3>Company Name:</h3>
+                <input type="text" id="company1" name="company1">
+
+                <h3>Position:</h3>
+                <input type="text" id="position1" name="position1">
+
+                <!-- Add more employment records if needed -->
+            </form>
+        </section>
+
+        <!-- Character Reference Section -->
+        <section>
+            <h2>Character Reference</h2>
+            <form>
+                <h3>Name:</h3>
+                <input type="text" id="ref1-name" name="ref1-name">
+
+                <h3>Position:</h3>
+                <input type="text" id="ref1-position" name="ref1-position">
+            </form>
+        </section>
+    </div>
+</body>
+</html>
